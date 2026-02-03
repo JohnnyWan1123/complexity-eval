@@ -11,7 +11,7 @@ evaluation_function = "evaluation_function.main:main"
 evaluation_function_dev = "evaluation_function.dev:dev"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 typing_extensions = "^4.12.2"
 pydantic = "^2.0"
 lark = "^1.1"
@@ -21,6 +21,7 @@ lf_toolkit = { git = "https://github.com/lambda-feedback/toolkit-python.git", br
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
+pytest-asyncio = "^1.2.0"
 flake8 = "^7.1.0"
 
 [build-system]
